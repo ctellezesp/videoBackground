@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+	<title> Paginal Principal </title>
+	<link rel="stylesheet" href="css/materialize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/materialize.js"></script>
+	<script type="text/javascript" src="js/covervid.js"></script>
+	<script type="text/javascript" src="js/raphael.min.js"></script>
+    <script type="text/javascript" src="js/raphael.icons.min.js"></script>
+    <script type="text/javascript" src="js/wheelnav.min.js"></script>
+    <script type="text/javascript">
+
+        window.onload = function () {
+
+            var wheel = new wheelnav("wheelDiv");
+
+            //This is the place for code snippets from the documentation -> http://wheelnavjs.softwaretailoring.net/documentation.html
+
+            wheel.createWheel(["Inicio", "Nosotros", "Servicios", "Precios", "Contacto", "Galeria"]);
+            wheel.navigateWheel(2);
+
+            //Insert generated JavaScript code from here -> http://pmg.softwaretailoring.net
+
+        };
+
+    </script>
+</head>
+<body>
+	<div class="row">
+	<div class="col s12 m1 l1">
+    <img id="img" src="https://tec.mx/sites/default/files/2016-11/admisiones.png"/>
+    </div>
+    <div class="col s12 m4 l4">
+    <div id="wheelDiv"></div>
+</div>
+</div>
+	<div class="col s12 m12 l12">
+    <div class="covervid-wrapper">
+    <video class="covervid-video" autoplay loop poster="img/video-fallback.png">
+        <source src="media/disco.mp4" type="video/mp4">
+    </video>
+</div>
+    </div>
+
+</div>
+</body>
+</html>
